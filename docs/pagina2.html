@@ -8,16 +8,35 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <nav class="fixed-top navbar bg-secondary text-white">
-                <div class="d-inline fs-4"><img src="img/1206810.png" alt="Code Academy" style="width: 12%;">Code Academy</div>
-                <div class="justify-content-end fs-5">
-                    <a href="" id="nav-home" class="text-decoration-none pe-2 text-white">Home</a>
-                    <a href="" id="nav-projetos" class="text-decoration-none pe-2 text-white">Projetos</a>
-                    <a href="" id="nav-contato" class="text-decoration-none pe-4 text-white">Contato</a>
-                </div>
-            </nav>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <img src="img/1206810.png" alt="" style="width: 3%;" class="me-3">
+          <a class="navbar-brand" href="#">Code Academy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cursos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                  <li><a class="dropdown-item" href="#">Python</a></li>
+                  <li><a class="dropdown-item" href="#">C++</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
     </header>
     <main>
       <div id="slideprincipal" class="carousel slide">

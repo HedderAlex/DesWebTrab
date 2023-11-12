@@ -11,129 +11,89 @@
         <div class="row">
             <div class="col text-center bg-black mt-3 py-3 text-white"> <h1>Formulario</h1></div>
         </div>
-        <div class="row border border-black border-5 m-3 py-2 bg-light shadow-lg px-3">
-            <div class="row">
-                <div class="col">
-                    <p>Seu Nome:</p>
-                    <div class="form-check">
-                        <input type="text">
-                        <label for="nome"></label>
+        <form action=" ">
+            <div class="row border border-black border-5 m-3 py-2 bg-light shadow-lg px-3">
+                <div class="row">
+                    <div class="col">
+                        <p>Seu Nome:</p>
+                        <div class="form-check">
+                            <input type="text" required>
+                            <label for="nome"></label>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <p>Seu Sobrenome:</p>
-                    <div class="form-check">
-                        <input type="text">
-                        <label for="nome"></label>
+                <div class="row">
+                    <div class="col">
+                        <p>Seu Sobrenome:</p>
+                        <div class="form-check">
+                            <input type="text" required>
+                            <label for="nome"></label>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <p>Sua idade(Anos):</p>
-                    <div class="form-check">
-                        <input type="number">
-                        <label for="idade"></label>
+                <div class="row">
+                    <div class="col">
+                        <p>Sua idade(Anos):</p>
+                        <div class="form-check">
+                            <input type="number" max="120" min="0" required>
+                            <label for="idade"></label>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <p>Quantos irmaos possui:</p>
-                    <div class="form-check">
-                        <input type="number">
-                        <label for="irmao"></label>
+                <div class="row">
+                    <div class="col">
+                        <p>Altura:</p>
+                        <div class="form-check">
+                            <input type="number" max="2.72" min="0.6" required step="0.1">
+                            <label for="irmao"></label>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 p-3">
-                    <p>Qual seu genero:</p>
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input" value="F" name="genero">
-                        <label for="genero" class="form-check-label">Feminino</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input" value="M" name="genero">
-                        <label for="genero" class="form-check-label">Masculino</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input" value="O" name="genero">
-                        <label for="genero" class="form-check-label">Outro</label>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 p-3">
-                    <p>Qual seu periodo da faculdade:</p>
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input" value="M" name="periodo">
-                        <label for="periodo" class="form-check-label">Matutino</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input" value="V" name="periodo">
-                        <label for="periodo" class="form-check-label">Vespertino</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input" value="N" name="periodo">
-                        <label for="periodo" class="form-check-label">Noturno</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input" value="I" name="periodo">
-                        <label for="periodo" class="form-check-label">Integral</label>
+                <div class="row">
+                    <div class="col-md-12 p-3">
+                        <p>Qual seu genero:</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" value="F" name="genero" checked>
+                            <label for="genero" class="form-check-label">Feminino</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" value="M" name="genero">
+                            <label for="genero" class="form-check-label">Masculino</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" value="N" name="genero">
+                            <label for="genero" class="form-check-label">Nao informar</label>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 p-3">
-                    <p>Qual seu curso:</p>
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input" value="A" name="curso">
-                        <label for="curso" class="form-check-label">Analise e Desenvolvimento de Sistemas</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input" value="B" name="curso">
-                        <label for="curso" class="form-check-label">Biomedicina</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input" value="P" name="curso">
-                        <label for="curso" class="form-check-label">Psicologia</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input" value="O" name="curso">
-                        <label for="curso" class="form-check-label">Odontologia</label>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 p-3">
-                    <p>Hobbies:</p>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" value="V" name="game">
-                        <label for="game" class="form-check-label">Video game</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" value="F" name="filme">
-                        <label for="filme" class="form-check-label">Filme</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" value="S" name="serie">
-                        <label for="serie" class="form-check-label">Serie</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" value="L" name="livro">
-                        <label for="livro" class="form-check-label">Livro</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" value="O" name="outro">
-                        <label for="outro" class="form-check-label">Outro</label>
+                <div class="row">
+                    <div class="col-md-12 p-3">
+                        <p>Hobbies:</p>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" value="V" name="game">
+                            <label for="game" class="form-check-label">Video game</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" value="F" name="filme">
+                            <label for="filme" class="form-check-label">Filme</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" value="S" name="serie">
+                            <label for="serie" class="form-check-label">Serie</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" value="L" name="livro">
+                            <label for="livro" class="form-check-label">Livro</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" value="O" name="outro" checked>
+                            <label for="outro" class="form-check-label">Outro</label>
+                        </div>
                     </div>
                 </div>
+                <button class="btn btn-dark" onclick="displayRadioValue()">Enviar</button>
             </div>
-            <button class="btn btn-dark" onclick="displayRadioValue()">Enviar</button>
-        </div>
+        </form>
     </div>
 </body>
 </html>

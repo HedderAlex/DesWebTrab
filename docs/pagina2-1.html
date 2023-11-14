@@ -6,9 +6,55 @@
     <title>Cursos Code Academy</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
-  <body>
+  <body style="overflow: hidden;">
     <div>
+      <header>
+        <nav class="navbar navbar-expand-lg bg-light border-bottom border-black border-3">
+          <div class="container-fluid">
+            <img src="img/Code-Optimization.png" alt="" style="width: 3%;" class="me-3">
+            <a class="navbar-brand" href="#">Code Academy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="pagina2.html">Home</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="row" style="background-color: rgb(45, 82, 104);">
+          <div class="col-6" style="margin-top: 10%;">
+            <form class="ms-4 text-light">
+              <h2>Formulario de Inscrisao para os cursos</h2>
+              <div class="mb-3">
+                <label for="nameInput" class="form-label">Nome Completo</label>
+                <input type="text" class="form-control" id="nameInput" required>
+              </div>
+              <div class="mb-5">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" required>
+              </div>
+              <select class="form-select" aria-label="Default select example" required>
+                <option selected>Seleciona qual curso deseja Fazer</option>
+                <option value="1">JavaScript</option>
+                <option value="2">Python</option>
+                <option value="3">C++</option>
+              </select>
+              <button type="submit" class="btn btn-success mt-4" onclick="finalizar()">Finalizar</button>
+            </form>
+          </div>
+          <div class="col-6">
+            <img src="https://assets-blog.hostgator.com.br/wp-content/uploads/2022/01/technology-gb824f8eb1_1920.webp" alt="" style="height: 100vh; width: 100vh;">
+          </div>
+        </div>
+      </main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="JS/script2-1.js"></script>
   </body>
 </html>

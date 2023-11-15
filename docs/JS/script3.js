@@ -2,14 +2,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // Gera um número aleatório entre 1 e 1000
     var numeroAleatorio = parseInt(Math.random() * 1000) + 1;
 
-    // Obtém referências para os elementos do DOM
+    // Obtém referências para os elementos do DOM e inicializa as tentativas
     var form = document.querySelector("form");
     var inputNumero = document.getElementById("numero");
     var paragrafoComparacao = document.getElementById("comparacao");
     var paragrafoAnterior = document.getElementById("anterior");
     var paragrafoTentativa = document.getElementById("tentativa");
-
-    // Inicializa as tentativas
     var tentativas = 0;
 
     // Adiciona um ouvinte de eventos para o botão "Enviar"
@@ -34,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             // Adiciona o número inserido ao parágrafo "anterior"
-            paragrafoAnterior.textContent += numeroInserido + ", ";
+            paragrafoAnterior.textContent = "Ultimo Numero: "+numeroInserido;
         }
     });
 });
